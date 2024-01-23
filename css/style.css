@@ -15,8 +15,8 @@ body{
 /* header */
 
 header{
-  position: fixed;
-  z-index: 1;
+  height: 80px;
+  background-color: lightblue;
   right: 40px;
   width: 100%;
 }
@@ -87,8 +87,6 @@ footer{
   color: white;
   width: 100%;
   height: 100px;
-  position: fixed;
-  z-index: 1;
   font-size: 1.8rem;
 }
 
@@ -105,15 +103,21 @@ footer{
   padding: 0 10px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  display: inline-block;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+
+}
+
+ul{
+  display: flex;
 }
 
 .end-meeting{
   height: 100%;
+  line-height: 100px;
   background-color: gray;
   color: red;
-  justify-content: center;
 }
 
 .green{
